@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>{{ search|title }}</h3>
+<div class='container'>
+<!--div style='background-color:black;'-->
+<div class='row'>
+{% for post in final_posting %}
+	<div class="col s4">
+		<div class="card card1">
+    			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="{{post.3}}">
+    			</div>
+    			<div class="card-content">
+				<a href='{{post.1}}'><span id='font0' class="card-title"><strong><b>{{post.0}}</b></strong></span></a>
+    			</div>
+    		<div class="card-reveal">
+			<span class="card-title">{{post.0}}<i class="material-icons right">close</i></span>
+			<p>{{post.2}}</p>
+    		</div>
+  		</div>
+	</div>	
+{% endfor %}
+</div>
+<!--/div-->
+</div>
+{% endblock content %}

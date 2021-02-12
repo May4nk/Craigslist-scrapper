@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>India's Craiglist Scrapper</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	{% load static %}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href='{% static 'craiglist/style.css' %}'>
+</head>
+<!--div class='parallex'-->
+<body class='parallex'>
+	<div class='navbar-fixed'>
+		<nav class='z-depth-0 body'>
+			<div class="container color nav-wrapper">
+				<a href="/" class="brand-logo"><i class="material-icons">filter_drama</i>Craiglist's Scrapper</a>
+				<ul class="right">
+					<li><a href="/"><i class='material-icons'>account_balance</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class='container'>
+	<b><h1 style='color:orange;margin-bottom:0px'>SEARCH Your Wished Product </h1></b>
+		<b><p style='color:orange; text-align:center;margin-top:0px;'>on India's craigslist with better and simple Interface.</p></b>
+		<div class='margin'>
+			<form action='{% url 'search' %}' method='post'>
+			{% csrf_token %}
+				<b><input type='text' name='search' placeholder='Search...'></b>
+				<button class="btn waves-effect waves-light body" type="submit" name="action">Submit
+					<i class="material-icons right">flash_on</i>
+				</button>
+			</form>
+		</div>
+	</div>
+{% block content %}
+
+{% endblock content %}
+</body>
+<!--/div-->
+</html>

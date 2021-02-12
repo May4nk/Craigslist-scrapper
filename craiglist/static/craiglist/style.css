@@ -1,0 +1,90 @@
+body{
+	height:100%;
+	color:black;
+	width:100%;	
+}
+
+input[type=text]{
+	border:2px solid black;
+	color:orange;
+	font-weight:bold;
+}
+
+h1 {
+	text-align:center;
+	color:black;
+	font-family:serif;
+	font-size:40px;
+}
+
+h3{
+	text-align:center;
+	color:orange;
+	font-weight:bold;
+}
+
+::placeholder{
+	color:orange;
+}
+
+.card-image{
+	height:250px;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	position:relative;
+}
+
+.parallex{
+	background-image:url('peace.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+.card-image{
+	size:500px;
+	overflow:hidden;
+}
+
+.card-title{
+	color:Black;
+	overflow:hidden;
+	size:500px;
+	font-size:1px;
+}
+
+#font0{
+	font-size:15px !important;
+}
+
+.card1 {
+	height:70%;
+	overflow:hidden;	
+}
+
+.container1{
+	margin:auto;
+	width:80%;
+	background-color:black;
+}
+
+.body {
+	background-color:black;
+	color:orange;
+}
+
+.margin {
+	text-align:center;
+	display:block;
+	margin-top:150px;
+	margin-left:200px;	
+	margin-right:200px;
+}
+
+a:link {
+	color:orange;
+	text-decoration:none;
+	background-color:black;
+}
